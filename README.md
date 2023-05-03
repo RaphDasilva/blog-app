@@ -56,8 +56,8 @@
 - Users will be able to comment on blog posts.
 
 
-## 🚀 Project documentation <a name="live-demo"></a>
-### Coming soon
+## 🚀 live-demo <a name="live-demo"></a>
+ Coming soon
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -95,10 +95,10 @@ Install Dependencies with:
   ```
 
   create database in your postgre with:
-  ``` sh
+  ```
     rails db:create
-    ```
-> Note: If you have any problem with the database, you can check the database.yml file and change the username and password to your own. Run migration with:
+  ```
+Note: If you have any problem with the database, you can check the database.yml file and change the username and password to your own. Run migration with:
 
 ``` sh
   rails db:migrate
