@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   let(:user) { User.create(name: 'Raph', photo: 'http://placekitten.com/g/200/300', bio: 'test user', post_count: 0) }
-  subject { Post.new(author: user, title: 'Hello', body: 'This is my first post', comments_counter: 0, likes_counter: 0) } 
+  subject do
+    Post.new(author: user, title: 'Hello', body: 'This is my first post', comments_counter: 0, likes_counter: 0)
+  end
 
   it 'is valid with valid attributes' do
     expect(subject).to be_valid
@@ -55,9 +57,10 @@ RSpec.describe Post, type: :model do
     let(:user_with_posts) { User.create(name: 'John', post_count: 0) }
 
     it 'updates the post count of the author' do
-      expect { 
-        Post.create(author: user_with_posts, title: 'Test', body: 'This is a test post', comments_counter: 0, likes_counter: 0)
-      }.to change { user_with_posts.reload.post_count }.from(0).to(1)
+      expect do
+        Post.create(author: user_with_posts, title: 'Test', body: 'This is a test post', comments_counter: 0,
+                    likes_counter: 0)
+      end.to change { user_with_posts.reload.post_count }.from(0).to(1)
     end
   end
 end

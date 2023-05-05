@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   describe 'validations' do
-    author = User.create(name: 'Chris',photo: 'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/10/Andor_Luthen-Rael.png',bio: 'Software Engineer',post_count: 3)
+    author = User.create(name: 'Chris',
+                         photo: 'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/10/Andor_Luthen-Rael.png',
+                         bio: 'Software Engineer', post_count: 3)
     post = Post.create(author_id: author.id, title: 'Post', body: 'Hello world!', likes_counter: 4, comments_counter: 2)
     subject { Comment.new(author_id: author.id, post_id: post.id, body: 'Comment') }
 
