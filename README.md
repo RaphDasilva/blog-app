@@ -56,8 +56,8 @@
 - Users will be able to comment on blog posts.
 
 
-## 🚀 live-demo <a name="live-demo"></a>
- Coming soon
+<!-- ## 🚀 live-demo <a name="live-demo"></a>
+ Coming soon -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
