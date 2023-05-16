@@ -125,6 +125,13 @@ Run tests with:
 - LinkedIn: [@RaphOkolo](https://www.linkedin.com/in/RaphOkolo/)
 
 
+ **Felix Adjei Sowah**
+
+- GitHub: [@githubhandle](https://github.com/Lancelot-SO)
+- Twitter: [@twitterhandle](https://twitter.com/Lancelot_hans)
+- LinkedIn: [LinkedIn](htps://www.linkedin.com/in/felix-sowah)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
