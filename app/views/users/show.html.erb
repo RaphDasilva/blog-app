@@ -7,6 +7,7 @@
       <h2><%= @users.name %></h2>
       <p>Number of posts: <%= @users.post_count %></p>
     </div>
+    
   </li>
   <li class="li-box">
     <div class="inner-li-box">
@@ -42,7 +43,9 @@
       </div>
     <% end %>
   </li>
-  <li class="li-box">
-        <a href="<%= url_for("/users/#{@users.id}/posts/new") %>" class="button button-wide">Create new post</a>
+  <% if current_user.id == @users.id %>
+    <li class="li-box">
+      <a href="<%= url_for(new_user_post_path(@users)) %>" class="button button-wide">Create new post</a>
     </li>
+  <% end %>
 </ul>

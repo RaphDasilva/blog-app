@@ -104,6 +104,10 @@ body {
   padding: 10px;
 }
 
+.online {
+  color: #155724;
+}
+
 .info-box p {
   margin-top: 20px;
   float: right;
@@ -227,7 +231,7 @@ button {
   justify-content: space-between;
   padding: 0 20px;
   row-gap: 0;
-  background-color: beige;
+  background-color: #8ecae6;
 }
 
 .dropdown {
@@ -278,4 +282,13 @@ button:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.delete-button {
+  width: auto;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background: #219ebc;
+  color: aliceblue;
 }

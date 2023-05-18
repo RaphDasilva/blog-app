@@ -11,6 +11,9 @@
             <%= image_tag(user.photo || "", class: "user-image") %>
         </div>
         <div class="info-box">
+        <% if current_user && current_user.id == user.id %>
+            <i class="fas fa-circle online"></i>
+        <% end %>
             <h2><%= user.name %></h2>
             <p>Number of posts: <%= user.post_count %></p>
         </div>
