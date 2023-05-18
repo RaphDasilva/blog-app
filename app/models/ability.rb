@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
@@ -11,11 +9,12 @@ class Ability
 
     can :destroy, Post, user_id: user.id
     can :destroy, Comment, user_id: user.id
-    
-    if user.role == 'admin'
-      can :destroy, Post
-      can :destroy, Comment
-    end
+
+    return unless user.role == 'admin'
+
+    can :destroy, Post
+    can :destroy, Comment
+
     # Define abilities for the user here. For example:
     #
     #   return unless user.present?
