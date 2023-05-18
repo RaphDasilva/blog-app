@@ -104,6 +104,10 @@ body {
   padding: 10px;
 }
 
+.online {
+  color: #155724;
+}
+
 .info-box p {
   margin-top: 20px;
   float: right;
@@ -227,7 +231,7 @@ button {
   justify-content: space-between;
   padding: 0 20px;
   row-gap: 0;
-  background-color: beige;
+  background-color: #8ecae6;
 }
 
 .dropdown {
