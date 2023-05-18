@@ -283,3 +283,12 @@ button:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.delete-button {
+  width: auto;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background: #219ebc;
+  color: aliceblue;
+}
